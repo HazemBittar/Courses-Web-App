@@ -1,18 +1,21 @@
-[
-    {
-      "id": 1,
-      "name": "course1"
+[{
+        "id": 1,
+        "name": "course1",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor libero, fringilla vitae suscipit ac, varius ut purus. Integer ut justo cursus, hendrerit ipsum et, ornare erat."
     },
     {
-      "id": 2,
-      "name": "course2"
+        "id": 2,
+        "name": "course2",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor libero, fringilla vitae suscipit ac, varius ut purus. Integer ut justo cursus, hendrerit ipsum et, ornare erat."
     },
     {
-      "id": 3,
-      "name": "course3"
+        "id": 3,
+        "name": "course3",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor libero, fringilla vitae suscipit ac, varius ut purus. Integer ut justo cursus, hendrerit ipsum et, ornare erat."
     },
     {
         "id": 4,
-        "name": "course4"
-      }
-  ]
+        "name": "course4",
+        "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec dolor libero, fringilla vitae suscipit ac, varius ut purus. Integer ut justo cursus, hendrerit ipsum et, ornare erat."
+    }
+]
