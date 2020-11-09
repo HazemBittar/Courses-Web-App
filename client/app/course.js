@@ -17,9 +17,6 @@ export class Course {
 
         container.appendChild(title);
         container.appendChild(body);
-
-        console.log(container)
-
         return container;
     }
 }

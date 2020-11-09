@@ -53,23 +53,31 @@
                     <div class="button-add">
                         <p>Add New Course</p>
                     </div>
-                    <div class="form-add">
-                        <div class="form-content-container">
-                            <div>
-                                <p class="form-title">You are adding a new course</p>
-                            </div>
-                            <div class="form-content">
-                                <input class="form-course-name" type="text" placeholder="Course name">
-                            </div>
-                            <div class="form-content">
-                                <textarea class="form-course-desc" placeholder="Description"></textarea>
-                            </div>
-                            <div class="form-button-wrapper">
-                                <button class="cancel-btn">Cancel</button>
-                                <button class="save-btn">Save</button>
-                            </div>
+
+                    <!-- <div class="form-content-container">
+                        <div>
+                            <p class="form-title">You are adding a new course</p>
                         </div>
-                    </div>
+                        <div class="form-content">
+                            <input class="form-course-name" type="text" placeholder="Course name" name="name">
+                        </div>
+                        <div class="form-content">
+                            <textarea class="form-course-desc" placeholder="Description" name="body"></textarea>
+                        </div>
+                        <div class="form-button-wrapper">
+                            <button class="cancel-btn">Cancel</button>
+                            <button type="submit" class="save-btn">Save</button>
+                        </div>
+                    </div> -->
+
+                    <form action="/api/courses" method="POST" class="form-add">
+                        <label class="form-title">You are adding a new course</label>
+                        <input class="form-course-name" type="text" placeholder="Course name" name="name" id="name">
+                        <textarea class="form-course-desc" placeholder="Description" name="body" id="body"></textarea>
+                        <button class="cancel-btn">Cancel</button>
+                        <button type="submit" class="save-btn">Save</button>
+                    </form>
+
                     <div class="button-course">
                         <a href="./index.html"></a>
                         <p>Back to Homepage</p>

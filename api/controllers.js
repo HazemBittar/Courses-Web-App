@@ -18,18 +18,18 @@ async function getCourse() {
     courses = JSON.parse(list);
     return courses;
 }
-// const courses = [
-//   { id: 1, name: "course1" },
-//   { id: 2, name: "course2" },
-//   { id: 3, name: "course3" },
-//   { id: 4, name: "course4" },
-// ];
+const courses = [
+    { id: 1, name: "course1" },
+    { id: 2, name: "course2" },
+    { id: 3, name: "course3" },
+    { id: 4, name: "course4" },
+];
 
-// function validateCourse(course) {
+function validateCourse(course) {
 
-//   const schema = { name: Joi.string().min(2).required() };
-//   return Joi.validate(course, schema);
-// }
+    const schema = { name: Joi.string().min(2).required() };
+    return Joi.validate(course, schema);
+}
 
 const controllers = {
     hello: (req, res) => {
@@ -52,6 +52,7 @@ const controllers = {
             let course = courses[id - 1];
             console.log(course);
             res.send(course);
+
         } else {
             res
                 .status(404)
@@ -66,14 +67,11 @@ const controllers = {
             const course = {
                 id: courses.length + 1,
                 name: req.body.name,
+                body: req.body.body
             };
             courses.push(course);
-            console.log(course);
-
-
-            console.log(courses);
             await writeFilePromise(DATA_DIR, JSON.stringify(courses));
-            res.send(course);
+            res.redirect('/courses.html')
         } catch (err) {
             res.status(501).send(err);
         }
